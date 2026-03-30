@@ -1,6 +1,6 @@
 # Systems Design Advisor Skill
 
-一个融合系统动力学思维（Donella Meadows *Thinking in Systems*）的产品设计顾问 Claude Skill。它不只是给 UI 建议，而是帮你看到产品背后的系统结构，包含反馈回路、存量流量、延迟、杠杆点，然后在最有效的地方干预。
+一个融合系统思考（Donella Meadows *Thinking in Systems*）的产品设计顾问 Claude Skill。它不只是给 UI 建议，而是帮你看到产品背后的系统结构，包含反馈回路、存量流量、延迟、杠杆点，然后在最有效的地方干预。
 
 ---
 
