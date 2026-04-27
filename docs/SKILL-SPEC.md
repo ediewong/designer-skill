@@ -55,12 +55,12 @@
 
 ## 打包约定
 
-- `.skill` 文件继续放在仓库根目录，方便直接安装
+- `.skill` 文件统一放在仓库根目录下的 `packages/` 目录
 - 打包时归档根目录应当是 skill 自己的 slug，而不是工作流阶段路径
-- 例：`00-meta/systems-design-advisor/` 打包后仍然是 `systems-design-advisor.skill`
+- 例：`00-meta/systems-design-advisor/` 打包后仍然是 `packages/systems-design-advisor.skill`
 
 ## 演进约定
 
-- 新能力先写入阶段 README 和 `skill-map.md`
+- 新能力先写入阶段 README 和 `docs/skill-map.md`
 - 当一个能力真正具备 `SKILL.md` 和最小可用资源后，再升级为正式 skill
 - 对现有 skill 做大升级时，优先新增 references / assets / evals，而不是频繁改名

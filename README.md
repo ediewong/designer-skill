@@ -14,8 +14,6 @@
 ```text
 .
 ├── README.md
-├── SKILL-SPEC.md
-├── skill-map.md
 ├── LICENSE
 ├── 00-meta/
 ├── 01-discover/
@@ -25,8 +23,13 @@
 ├── 05-deliver/
 ├── 06-measure/
 ├── 07-career/
-├── systems-design-advisor.skill
-└── object-modeling-for-design.skill
+├── docs/
+│   ├── SKILL-SPEC.md
+│   └── skill-map.md
+└── packages/
+    ├── thinking-coach.skill
+    ├── systems-design-advisor.skill
+    └── object-modeling-for-design.skill
 ```
 
 ## 工作流阶段
@@ -46,26 +49,29 @@
 
 目前已经落位到工作流结构中的 skill：
 
+- `00-meta/thinking-coach/`
 - `00-meta/systems-design-advisor/`
 - `02-define/object-modeling-for-design/`
 
-这两个 skill 仍然保留各自独立的发布包：
+这三个 skill 仍然保留各自独立的发布包：
 
-- `systems-design-advisor.skill`
-- `object-modeling-for-design.skill`
+- `packages/thinking-coach.skill`
+- `packages/systems-design-advisor.skill`
+- `packages/object-modeling-for-design.skill`
 
 ## 仓库级文件
 
-- `SKILL-SPEC.md`：skill 目录结构、frontmatter、命名和打包约定
-- `skill-map.md`：工作流阶段、skill 规划、方法论来源和当前状态
+- `docs/SKILL-SPEC.md`：skill 目录结构、frontmatter、命名和打包约定
+- `docs/skill-map.md`：工作流阶段、skill 规划、方法论来源和当前状态
 
 ## 使用方式
 
 ### 安装打包文件
 
 ```bash
-claude skill install systems-design-advisor.skill
-claude skill install object-modeling-for-design.skill
+claude skill install packages/thinking-coach.skill
+claude skill install packages/systems-design-advisor.skill
+claude skill install packages/object-modeling-for-design.skill
 ```
 
 ### 直接使用源码
@@ -74,6 +80,7 @@ claude skill install object-modeling-for-design.skill
 
 ```text
 ~/.claude/skills/
+├── thinking-coach/
 ├── systems-design-advisor/
 └── object-modeling-for-design/
 ```
@@ -82,5 +89,7 @@ claude skill install object-modeling-for-design.skill
 
 - 阶段目录负责表达“这个 skill 在工作流中的位置”
 - 具体 skill 目录负责表达“这个 skill 的实际方法和资源”
-- 未实现的能力先写进阶段索引和 `skill-map.md`，避免提前制造空壳 skill
+- `docs/` 负责存放仓库级规范与规划文档
+- `packages/` 负责存放可直接安装的发布产物
+- 未实现的能力先写进阶段索引和 `docs/skill-map.md`，避免提前制造空壳 skill
 - 已发布 skill 的 slug 和 `.skill` 文件名尽量保持稳定，避免影响已有安装者
