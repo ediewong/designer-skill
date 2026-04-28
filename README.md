@@ -29,6 +29,8 @@
 └── packages/
     ├── thinking-coach.skill
     ├── systems-design-advisor.skill
+    ├── grill-with-docs.skill
+    ├── to-prd.skill
     └── object-modeling-for-design.skill
 ```
 
@@ -51,12 +53,17 @@
 
 - `00-meta/thinking-coach/`
 - `00-meta/systems-design-advisor/`
+- `00-meta/grill-with-docs/`
+- `01-discover/to-prd/`
 - `02-define/object-modeling-for-design/`
+- `02-define/design-decision-framework/`
 
-这三个 skill 仍然保留各自独立的发布包：
+已打包的 skill 保留各自独立的发布包：
 
 - `packages/thinking-coach.skill`
 - `packages/systems-design-advisor.skill`
+- `packages/grill-with-docs.skill`
+- `packages/to-prd.skill`
 - `packages/object-modeling-for-design.skill`
 
 ## 仓库级文件
@@ -71,6 +78,8 @@
 ```bash
 claude skill install packages/thinking-coach.skill
 claude skill install packages/systems-design-advisor.skill
+claude skill install packages/grill-with-docs.skill
+claude skill install packages/to-prd.skill
 claude skill install packages/object-modeling-for-design.skill
 ```
 
@@ -82,7 +91,10 @@ claude skill install packages/object-modeling-for-design.skill
 ~/.claude/skills/
 ├── thinking-coach/
 ├── systems-design-advisor/
-└── object-modeling-for-design/
+├── grill-with-docs/
+├── to-prd/
+├── object-modeling-for-design/
+└── design-decision-framework/
 ```
 
 ## 维护原则

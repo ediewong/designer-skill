@@ -6,9 +6,9 @@
 
 | 阶段 | 目录 | 代表能力 | 当前状态 |
 |------|------|---------|---------|
-| 元能力 | `00-meta/` | 思考教练、系统思维、设计评审 | `thinking-coach`、`systems-design-advisor` 已实现 |
-| 发现 | `01-discover/` | 用户研究、竞品分析、问题框定、对齐 | 规划中 |
-| 定义 | `02-define/` | 信息架构、对象建模、旅程、流程、策略 | `object-modeling-for-design` 已实现 |
+| 元能力 | `00-meta/` | 思考教练、系统思维、设计评审、文档化追问 | `thinking-coach`、`systems-design-advisor`、`grill-with-docs` 已实现 |
+| 发现 | `01-discover/` | 用户研究、竞品分析、问题框定、对齐、PRD 生成 | `to-prd` 已实现 |
+| 定义 | `02-define/` | 信息架构、对象建模、旅程、流程、策略 | `object-modeling-for-design`、`design-decision-framework` 已实现 |
 | 设计 | `03-design/` | 交互、UI、设计系统、响应式、原型 | 规划中 |
 | 验证 | `04-validate/` | 可用性测试、启发式评估、无障碍 | 规划中 |
 | 交付 | `05-deliver/` | handoff、review、文档 | 规划中 |
@@ -25,9 +25,21 @@
   - 当前承担系统思维 / 系统化设计诊断这条线
   - 后续可以演进成计划里的 `systems-thinking`
 
+- `00-meta/grill-with-docs/`
+  - 当前承担开工前追问 / 术语对齐 / 文档化决策这条线
+  - 适合跨定义、设计、交付阶段使用
+
+- `01-discover/to-prd/`
+  - 当前承担把已有上下文整理成 PRD / GitHub issue 这条线
+  - 与 `grill-with-docs` 配套使用，依赖其领域语言和文档意识
+
 - `02-define/object-modeling-for-design/`
   - 当前承担对象建模这条线
   - 后续可以继续补充 OOUX / enterprise patterns / 流程建模相关资源
+
+- `02-define/design-decision-framework/`
+  - 当前承担多方案权衡 / 设计分歧分析 / 决策说服这条线
+  - 适合在定义阶段把不同角色的评估维度摊开
 
 ## 优先级建议
 
@@ -44,7 +56,10 @@
 
 - `thinking-coach`：设计教练式提问、系统思维、结构化反思实践
 - `systems-design-advisor`：Donella Meadows《系统之美》
+- `grill-with-docs`：Matt Pocock 的 engineering skill，围绕 `CONTEXT.md`、ADR 和领域语言进行开工前追问
+- `to-prd`：Matt Pocock 的 engineering skill，把当前对话和代码库理解整理成 PRD，并可用于创建 GitHub issue
 - `object-modeling-for-design`：OOUX / Narrative Object Model / 企业后台对象建模实践
+- `design-decision-framework`：多利益相关方设计决策、方案权衡和反馈评估实践
 - 仓库整体规划：围绕“发现 -> 定义 -> 设计 -> 验证 -> 交付 -> 度量 -> 复盘/成长”的产品设计工作流
 
 ## 发布说明
