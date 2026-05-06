@@ -6,7 +6,7 @@
 
 | 阶段 | 目录 | 代表能力 | 当前状态 |
 |------|------|---------|---------|
-| 元能力 | `00-meta/` | 思考教练、系统思维、设计评审、文档化追问 | `thinking-coach`、`systems-design-advisor`、`grill-with-docs` 已实现 |
+| 元能力 | `00-meta/` | 思考教练、系统思维、设计评审、文档化追问、产品迭代工作流 | `thinking-coach`、`systems-design-advisor`、`grill-with-docs`、`product-iteration-workflow` 已实现 |
 | 发现 | `01-discover/` | 用户研究、竞品分析、问题框定、对齐、PRD 生成 | `to-prd` 已实现 |
 | 定义 | `02-define/` | 信息架构、对象建模、旅程、流程、策略 | `object-modeling-for-design`、`design-decision-framework` 已实现 |
 | 设计 | `03-design/` | 交互、UI、设计系统、响应式、原型 | 规划中 |
@@ -28,6 +28,10 @@
 - `00-meta/grill-with-docs/`
   - 当前承担开工前追问 / 术语对齐 / 文档化决策这条线
   - 适合跨定义、设计、交付阶段使用
+
+- `00-meta/product-iteration-workflow/`
+  - 当前承担产品设计迭代工作流 / 原型验证 / PRD 交付这条线
+  - 适合从模糊需求启动一个完整的产品设计项目
 
 - `01-discover/to-prd/`
   - 当前承担把已有上下文整理成 PRD / GitHub issue 这条线
@@ -57,6 +61,7 @@
 - `thinking-coach`：设计教练式提问、系统思维、结构化反思实践
 - `systems-design-advisor`：Donella Meadows《系统之美》
 - `grill-with-docs`：Matt Pocock 的 engineering skill，围绕 `CONTEXT.md`、ADR 和领域语言进行开工前追问
+- `product-iteration-workflow`：产品设计迭代工作流，覆盖需求捕获、可交互原型、评审验证、设计交接和 PRD 交付
 - `to-prd`：Matt Pocock 的 engineering skill，把当前对话和代码库理解整理成 PRD，并可用于创建 GitHub issue
 - `object-modeling-for-design`：OOUX / Narrative Object Model / 企业后台对象建模实践
 - `design-decision-framework`：多利益相关方设计决策、方案权衡和反馈评估实践

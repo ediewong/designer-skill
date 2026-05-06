@@ -31,6 +31,7 @@
     ├── systems-design-advisor.skill
     ├── grill-with-docs.skill
     ├── to-prd.skill
+    ├── product-iteration-workflow.skill
     └── object-modeling-for-design.skill
 ```
 
@@ -54,6 +55,7 @@
 - `00-meta/thinking-coach/`
 - `00-meta/systems-design-advisor/`
 - `00-meta/grill-with-docs/`
+- `00-meta/product-iteration-workflow/`
 - `01-discover/to-prd/`
 - `02-define/object-modeling-for-design/`
 - `02-define/design-decision-framework/`
@@ -64,6 +66,7 @@
 - `packages/systems-design-advisor.skill`
 - `packages/grill-with-docs.skill`
 - `packages/to-prd.skill`
+- `packages/product-iteration-workflow.skill`
 - `packages/object-modeling-for-design.skill`
 
 ## 仓库级文件
@@ -80,6 +83,7 @@ claude skill install packages/thinking-coach.skill
 claude skill install packages/systems-design-advisor.skill
 claude skill install packages/grill-with-docs.skill
 claude skill install packages/to-prd.skill
+claude skill install packages/product-iteration-workflow.skill
 claude skill install packages/object-modeling-for-design.skill
 ```
 
@@ -92,6 +96,7 @@ claude skill install packages/object-modeling-for-design.skill
 ├── thinking-coach/
 ├── systems-design-advisor/
 ├── grill-with-docs/
+├── product-iteration-workflow/
 ├── to-prd/
 ├── object-modeling-for-design/
 └── design-decision-framework/
